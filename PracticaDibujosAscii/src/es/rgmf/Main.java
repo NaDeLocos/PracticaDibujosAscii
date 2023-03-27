@@ -20,6 +20,27 @@ public class Main {
 
             // TODO Completa el programa con un switch para realizar lo indicado en el menú.
             //      Usa los métodos estáticos que ya hay implementadas y que puedes ver debajo.
+            switch(opcion){
+                case 1: 
+                    dibujarCuadrado(
+                        pedirNumero(entrada, "Introduce el número de asceriscos que quieres que tenga el cuadrado:")
+                    ); 
+                    break;
+                case 2:
+                    
+                    dibujarTrianguloRectangulo(
+                        pedirNumero(entrada,"Introduce la altura del triángulo: ")
+                    );
+                    break;
+                case 3: 
+                    dibujarPuntos(
+                        pedirNumero(entrada,"Introduce el eje X: "),
+                        pedirNumero(entrada,"Introduce el eje Y: ")
+                    ); 
+                    break;
+            }
+            
+            //fin TODO
 
             System.out.print("Intro para continuar...");
             entrada.nextLine();
